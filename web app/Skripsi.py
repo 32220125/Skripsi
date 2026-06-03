@@ -11,12 +11,13 @@ import base64
 import requests
 from urllib.parse import urlparse
 from typing import Dict, Any
-
+import os
 
 class URLAnalyzer:
 
     # 🔥 API KEY LANGSUNG DI SINI
-    API_KEY = "b4e92c7ed116dbc368254c4c937c4cf718c1a2d3e7e250c471cd8d5ab0270254"
+    API_KEY = os.getenv("VT_API_KEY")
+
 
     def __init__(self):
 
